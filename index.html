@@ -12,12 +12,16 @@
 <body>
 
 <nav class="navbar">
-   <a href="/index.html">Home</a>
-  <a href="#about">About</a>
-  <a href="#programmes">Programmes</a>
-  <a href="#admissions">Admissions</a>
-  <a href="#contact">Contact</a>
+  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+  <div class="nav-links">
+    <a href="/index.html#about">Home</a>
+    <a href="/index.html#programmes">Programmes</a>
+    <a href="/index.html#admissions">Admissions</a>
+    <a href="/index.html#contact">Contact</a>
+  </div>
 </nav>
+
 
 <header class="hero">
   <a href="#about">
@@ -36,7 +40,7 @@
 
 <section id="about">
   <h2>Welcome to Our Circle</h2>
-  <p id="rainbow-text">
+  <p id="rainbow-text" class="rainbow">
     The Growing Circle Academy is a warm, nurturing environment where children feel safe, valued, and inspired. Through play-based learning and gentle guidance, we support the whole child socially, emotionally, physically, and academically.
   </p>
 </section>
@@ -45,12 +49,12 @@
   <h2>Our Mission & Vision</h2>
   <div class="grid">
     <div class="card">
-      <div class="image-placeholder">Mission</div>
+      <img src="images/tires.jpeg" alt="tires play"  width="200px">
       <h3>Our Mission</h3>
       <p>To provide a nurturing, inclusive, and play-based early learning environment where children grow socially, emotionally, cognitively, and physically, supported by caring relationships and joyful exploration.</p>
     </div>
     <div class="card">
-      <div class="image-placeholder">Vision</div>
+      <img src="images/playground.jpeg" alt="kid play-ground" width="200px">
       <h3>Our Vision</h3>
       <p>A thriving community where children, families, and educators grow together in a circle of trust, collaboration, and lifelong learning.</p>
     </div>
@@ -61,7 +65,7 @@
   <h2>Why Choose The Growing Circle Academy</h2>
   <div class="grid">
     <div class="card">
-     <img src="images/cared classes.jpeg" alt="safeclass" class="image-placeholder">
+     <img src="images/cared classes.jpeg" alt="safeclass" class="image-placeholder" width="200px">
       <ul style="text-align:left; padding-left:1rem;">
         <li>Play-based, child-centred learning</li>
         <li>Caring, qualified educators</li>
@@ -71,7 +75,7 @@
       </ul>
     </div>
     <div class="card">
-      <img src="images/safe-classes.jpeg" alt="safety" class="image-placeholder">
+      <img src="images/safe-classes.jpeg" alt="safety" class="image-placeholder" width="200px">
       <h3>A Safe & Secure Environment</h3>
       <p>Your child’s safety is our top priority. Our secure facility includes:</p>
       <ul style="text-align:left; padding-left:1rem;">
@@ -81,7 +85,7 @@
       </ul>
     </div>
     <div class="card">
-      <img src="images/flexible.jpeg" alt="aftercare" class="image-placeholder">
+      <img src="images/flexible.jpeg" alt="aftercare" class="image-placeholder" height="150px" width="180px">
       <h3>Flexible Care for Busy Families</h3>
       <p>We offer flexible, reliable care options including:</p>
       <ul style="text-align:left; padding-left:1rem;">
@@ -97,7 +101,7 @@
 
 <section id="programmes">
   <h2>Our Programmes</h2>
- <p id="warm-text">
+ <p id="warm-text" class="rainbow">
   Our programmes are thoughtfully designed to support development through hands-on, play-based learning. As children grow, learning becomes more structured while remaining fun and age-appropriate.
 </p>
 <div class="grid">
@@ -132,7 +136,7 @@
 
   <div class="grid" style="margin-top:3rem;">
     <div class="card">
-        <img src="images/lbug.jpeg" alt="ladybug" class="image-placeholder">
+        <img src="images/lbug.jpeg" alt="ladybug" class="image-placeholder" width="200px">
       <h4>Grade RRR – Lady Bugs <img src="images/lady-bug.png" alt="lady-bug" width="25px"> </h4>
       <p><strong>Exploring and discovering</strong></p>
       <ul style="text-align:left;">
@@ -144,7 +148,7 @@
     </div>
 
     <div class="card">
-        <img src="images/elephants.jpeg" alt="elephant" class="image-placeholder">
+        <img src="images/elephants.jpeg" alt="elephant" class="image-placeholder" width="200px">
       <h4>Grade RR – Elephants <img src="images/elephant.png" alt="elephant" width="25px"></h4>
       <p><strong>Building confidence and curiosity</strong></p>
       <ul style="text-align:left;">
@@ -156,7 +160,7 @@
     </div>
 
     <div class="card">
-        <img src="images/giraffe.jpeg" alt="giraffe" class="image-placeholder">
+        <img src="images/giraffe.jpeg" alt="giraffe" class="image-placeholder" width="220px">
       <h4>Grade R – Giraffes <img src="images/nature.png" alt="nature" width="25px"></h4>
       <p><strong>CAPS-Aligned School Readiness</strong></p>
       <ul style="text-align:left;">
