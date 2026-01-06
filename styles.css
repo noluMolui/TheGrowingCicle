@@ -122,19 +122,19 @@ body {
   margin-bottom: 1.2rem;
 }
 
-.hero h1 {
-  color: var(--yellow);
+.hero h1 {margin: 0;
+  color: var(--orange);
   font-size: 2.4rem;
   font-weight: 800;
 }
 
-.hero .tagline {
-  color: var(--orange);
+.hero .tagline, .subtitle {
+    color: var(--yellow);
   font-size: 1.15rem;
   font-weight: 900;
+  padding-bottom: ;
 }
 
-/* ================= SECTIONS ================= */
 section {
   padding: 4.5rem 1.5rem;
   max-width: 1200px;
@@ -187,7 +187,7 @@ h2 {
   border-radius: 32px;
 }
 
-.cta a {
+.cta a, .gallery, .formb {
   display: inline-block;
   margin-top: 1.5rem;
   background: #fff;
@@ -196,6 +196,51 @@ h2 {
   border-radius: 30px;
   text-decoration: none;
   font-weight: 700;
+}
+
+.formb{background: var(--green-soft);}
+
+
+
+/* ===== GALLERY SECTION ===== */
+#gallery {
+  text-align: center;
+}
+
+.gallery-intro {
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Subtle hover – professional, not flashy */
+.gallery-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* Mobile refinement */
+@media (max-width: 600px) {
+  .gallery-grid img {
+    height: 200px;
+  }
 }
 
 /* ================= FORM ================= */
