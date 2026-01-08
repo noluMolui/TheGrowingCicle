@@ -265,32 +265,80 @@ form textarea {
 footer {
   background: #1f1f1f;
   color: #fff;
-  text-align: center;
+  text-align: left;
   padding: 2rem 1.5rem;
+  font-family: Arial, sans-serif;
 }
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.footer-info h3 {
+  color: var(--orange);
+  margin-bottom: 0.5rem;
+}
+
+.footer-links h4 {
+  color: var(--green);
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin: 0.5rem 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--orange);
+}
+
 .contact-section {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    margin: 20px 0;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
-  .contact-icons,
-  .social-links {
-    display: flex;
-    gap: 35px; 
-  }
+.contact-icons,
+.social-links {
+  display: flex;
+  gap: 20px; 
+   filter: invert(49%) sepia(96%) saturate(5207%) hue-rotate(4deg) brightness(100%) contrast(101%);
 
-  .icon {
-    width: 40px; 
-    height: 40px;
-    transition: transform 0.3s;
-  }
+}
 
-  .icon:hover {
-    transform: scale(1.2);
-  }
+.icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
 
-  
+.icon:hover {
+  transform: scale(1.2);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 2rem 0;
+}
+
+.footer-copy {
+  text-align: center;
+  margin: 0;
+}
