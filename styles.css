@@ -243,7 +243,7 @@ h2 {
   }
 }
 
-/* ================= FORM ================= */
+
 form {
   background: #fff;
   padding: 2.2rem;
@@ -260,7 +260,6 @@ form textarea {
   border: 1px solid #ddd;
   font-family: inherit;
 }
-
 
 footer {
   background: #1f1f1f;
@@ -308,28 +307,40 @@ footer {
   color: var(--orange);
 }
 
+
 .contact-section {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
+
 .contact-icons,
 .social-links {
   display: flex;
-  gap: 20px; 
-   filter: invert(49%) sepia(96%) saturate(5207%) hue-rotate(4deg) brightness(100%) contrast(101%);
-
+  gap: 20px;
 }
 
+
 .icon {
-  width: 40px;
-  height: 40px;
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: contain;
+  filter: invert(49%) sepia(96%) saturate(5207%) hue-rotate(4deg) brightness(100%) contrast(101%);
   transition: transform 0.3s;
 }
 
 .icon:hover {
   transform: scale(1.2);
+}
+
+
+@media (max-width: 500px) {
+  .contact-icons,
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 
 hr {
